@@ -19,7 +19,7 @@ class SndTestApp(App):
     def pressTestButton():
 
         if SndTestApp._sndObj == None:
-            SndTestApp._sndObj = SoundLoader.load('ys2_ost.ogg')
+            SndTestApp._sndObj = SoundLoader.load('ys2_ost.wav')
 
             if SndTestApp._sndObj == None:
                 print( '#  load sound failed.' )
