@@ -1,3 +1,6 @@
+import kivy
+kivy.require('1.8.0')
+
 from kivy.app import App
 from kivy.core.audio import SoundLoader
 
@@ -19,7 +22,7 @@ class SndTestApp(App):
     def pressTestButton():
 
         if SndTestApp._sndObj == None:
-            SndTestApp._sndObj = SoundLoader.load('ys2_ost.wav')
+            SndTestApp._sndObj = SoundLoader.load('ys2_ost.ogg')
 
             if SndTestApp._sndObj == None:
                 print( '#  load sound failed.' )
